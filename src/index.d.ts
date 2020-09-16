@@ -69,7 +69,8 @@ export interface IcicleChartGenericInstance<ChainableInstance> {
   tooltipContent(fn: TooltipFn): ChainableInstance;
 
   onClick(cb: ((node: Node) => void) | null): ChainableInstance;
-  onHover(cb: ((node: Node | null) => void) | null): ChainableInstance;
+  onMouseOver(cb: ((node: Node | null) => void) | null): ChainableInstance;
+  onMouseOut(cb: ((node: Node | null) => void) | null): ChainableInstance;
 
   zoomToNode(node: Node): ChainableInstance;
   zoomBy(k: number):ChainableInstance;
